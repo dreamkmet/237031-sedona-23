@@ -7,7 +7,7 @@
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
+        <img src="img/logotypes/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -67,7 +67,7 @@
               Седона не аттракцион для туристов, там течет своя жизнь
             </dd>
           </div>
-          <div class="features__item">
+          <div class="features__item features__item--housing">
             <dt class="features__number">
               Жилье
             </dt>
@@ -75,7 +75,7 @@
               Рекомендуем пожить в настоящем мотеле, все как в кино!
             </dd>
           </div>
-          <div class="features__item">
+          <div class="features__item features__item--food">
             <dt class="features__number">
               Еда
             </dt>
@@ -84,7 +84,7 @@
             </dd>
           </div>
           <div class="features__item">
-            <dt class="features__number">
+            <dt class="features__number features__item--souvenirs">
               Сувениры
             </dt>
             <dd class="features__description">
@@ -129,18 +129,53 @@
     </section>
 
     <section class="page-main__travel-offer">
-      <div class="travel__intro">
+      <div class="travel__container">
         <h2 class="travel__title">
           Заинтересовались?
         </h2>
-        <p class="travel__intro-text">
+        <p class="travel__description">
           Укажите предпологаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
-      </div>
-      <a class="travel-offer_button" href="#">Найти гостиницу</a>
+       <a class="travel-offer_button" href="#">Найти гостиницу</a>
+     </div>
     </section>
     </main>
 
+    <section class="page-main__map">
+      <h2 class="visually-hidden">
+        Городок Седона на карте
+      </h2>
+        <img src="img/map-mobile.jpg" width="320" height="350" alt="Карта">
+    </section>
+
+    <footer class="page-footer">
+      <a class="hashtag__link" href="#">
+        #visitsedona
+      </a>
+
+      <ul class="page-footer__list">
+        <li class="page-footer__list-item">
+          <a href="#">
+            <img src="img/social/twitter.svg" width="46" height="48" alt="Мы в Twitter">
+          </a>
+        </li>
+        <li class="page-footer__list-item">
+          <a href="#">
+            <img src="img/social/facebook.svg" width="46" height="48" alt="Мы в Facebook">
+          </a>
+        </li>
+        <li class="page-footer__list-item">
+          <a href="#">
+            <img src="img/social/youtube.svg" width="46" height="48" alt="Мы в Youtube">
+          </a>
+        </li>
+      </ul>
+
+      <a class="copyright__link" href="#">
+        Разработано
+        <img src="img/copyright.svg" width="27" height="34" alt="Разработано htmlacademy">
+      </a>
+    </footer>
   </body>
 </html>
