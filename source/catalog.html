@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Sedona</title>
+  <title>галерея городка Sedona</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img src="img/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
+      <img src="img/logotypes/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -41,6 +42,62 @@
     </nav>
   </header>
 
+  <main class="page-main">
+    <section class="page-main__intro">
+      <h1 class="visually-hidden">
+        Галерея городка Седона
+      </h1>
+      <img class="intro__main-text" src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
+    </section>
+
+    <section class="page-main__gallery">
+      <div class="gallery__container">
+        <h1 class="gallery__title">
+          Фото и видео
+        </h1>
+        <p class="gallery__text">
+          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+        </p>
+        <dl class="gallery__photo-list">
+          <div class="gallery__photo-item gallery__photo-item-vasts">
+            <dt class="gallery__photo-title">
+              Народные просторы
+            </dt>
+            <dd class="gallery__photo-autor">
+              Автор фото: Борис
+            </dd>
+          </div>
+          <div class="gallery__photo-item gallery__photo-item-vegetation">
+            <dt class="gallery__photo-title">
+              Местная растительность
+            </dt>
+            <dd class="gallery__photo-autor">
+              Автор фото: Сергей
+            </dd>
+          </div>
+          <div class="gallery__photo-item gallery__photo-item-road">
+            <dt class="gallery__photo-title">
+              Дорога на север
+            </dt>
+            <dd class="gallery__photo-autor">
+              Автор фото: Петр
+            </dd>
+          </div>
+          <div class="gallery__photo-item gallery__photo-item-bridge">
+            <dt class="gallery__photo-title">
+              Мост дьявола
+            </dt>
+            <dd class="gallery__photo-autor">
+              Автор фото: Антон
+            </dd>
+          </div>
+
+        </dl>
+
+      </div>
+
+    </section>
+  </main>
 </body>
 
 </html>
