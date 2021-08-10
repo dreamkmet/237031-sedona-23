@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Sedona</title>
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img src="img/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
+      <img src="img/logotypes/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -42,7 +43,82 @@
       </div>
     </nav>
   </header>
+  <main class="main-form">
+    <section class="main-form__intro">
+      <h1 class="visually-hidden">
+        Отзыв о отелях
+      </h1>
+      <img class="intro__text" src="img/feedback-text.svg" width="229" height="39" alt="Sedona">
 
+    <section class="main-form__feedback">
+      <div class="feedback__container">
+        <h1 class="feedback__title">
+          Оставьте свой отзыв
+        </h1>
+        <p class="feedback__text">
+          Помогите нашим отелям стать лучше!
+          Оставьте отзыв о них, а также о
+          посещенных вами
+          достопримечательностях
+        </p>
+
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset class="form__fieldset">
+            <legend class="form__title">Представьтесь:</legend>
+            <ul class="form__list">
+              <li class="list__item">
+                <label class="list__subtitle" for="name">Имя*:</label>
+                <input class="list__input" type="text" name="name" id="name" placeholder="Петр" required>
+              </li>
+              <li class="list__item">
+                <label class="list__subtitle" for="surname">Фамилия*:</label>
+                <input class="list__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
+              </li>
+              <li class="list__item">
+                <label class="list__subtitle" for="patronymic">Отчество*:</label>
+                <input class="list__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+              </li>
+            </ul>
+
+          </fieldset>
+        </form>
+
+  </main>
+
+<footer class="page-footer">
+  <div class="page-footer__container">
+    <div class="page-footer__hashtag">
+      <a class="hashtag__link" href="#">
+        #visitsedona
+      </a>
+    </div>
+    <div class="page-footer__social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">
+            <img src="img/social/twitter.svg" width="46" height="48" alt="Мы в Twitter">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">
+            <img src="img/social/facebook.svg" width="46" height="48" alt="Мы в Facebook">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <img src="img/social/youtube.svg" width="46" height="48" alt="Мы в Youtube">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://up.htmlacademy.ru/profession/frontender/11/adaptive">
+        <img src="img/copyright.svg" width="27" height="34" alt="Разработано htmlacademy">
+      </a>
+    </div>
+  </div>
+</footer>
 </body>
 
 </html>
