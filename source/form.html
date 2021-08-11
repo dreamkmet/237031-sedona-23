@@ -65,24 +65,91 @@
         <form class="feedback__form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="form__fieldset">
             <legend class="form__title">Представьтесь:</legend>
-            <ul class="form__list">
-              <li class="list__item">
-                <label class="list__subtitle" for="name">Имя*:</label>
-                <input class="list__input" type="text" name="name" id="name" placeholder="Петр" required>
+            <ul class="form__list list-contact">
+              <li class="lis-contact__item">
+                <label class="list-contact__subtitle" for="name">Имя*:</label>
+                <input class="list-contact__input" type="text" name="name" id="name" placeholder="Петр" required>
               </li>
-              <li class="list__item">
-                <label class="list__subtitle" for="surname">Фамилия*:</label>
-                <input class="list__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
+              <li class="list-contact__item">
+                <label class="list-contact__subtitle" for="surname">Фамилия*:</label>
+                <input class="list-contact__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
               </li>
-              <li class="list__item">
-                <label class="list__subtitle" for="patronymic">Отчество*:</label>
-                <input class="list__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+              <li class="list-contact__item">
+                <label class="list-contact__subtitle" for="patronymic">Отчество*:</label>
+                <input class="list-contact__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
               </li>
             </ul>
-
           </fieldset>
-        </form>
-
+          <fieldset class="form__fieldset">
+            <legend class="form__title">Контактная информация</legend>
+            <ul class="form__list list-contact">
+              <li class="list-contact__item">
+                <label class="list-contact__subtitle" for="telefon">Контактный телефон*:</label>
+                <input class="list-contact__input" type="tel"  name="telefon" id="telefon" placeholder="Введите телефон">
+              </li>
+              <li class="list-contact__item">
+                <label class="list-contact__subtitle" for="email">Электронная почта*:</label>
+                <input class="list-contact__input" type="email" name="email" id="email" placeholder="Введите e-mail">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__title">Ваше общее впечатление:</legend>
+            <ul class="form__list list-impression">
+              <li class="list-impression__item">
+                <input class="list-impression__input" type="radio" name="positive" id="positive" value="Скорее положительное" checked>
+                <label class="list-impression__subtitle" for="positive">Скорее положительное</label>
+              </li>
+              <li class="list-impression__item">
+                <input class="list-impression__input" type="radio" name="negative" id="negative" value="Скорее отрицательное">
+                <label for="list-impression__subtitle" for="negative">Скорее отрицательное</label>
+              </li>
+              <li class="list-impression__item">
+                <input class="list-impression__input" type="radio" name="none" id="none" value="Затрудняюсь ответить">
+                <label class="list-impression__subtitle" for="none">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__title">Посещенные достопримечательности:</legend>
+            <ul class="form__list list-visit">
+              <li class="list-visit__item">
+                <input class="list-visit__input" type="checkbox" id="bridge" name="bridge" checked>
+                <label class="list-visit__subtitle" for="bridge">Мост Дьявола</label>
+              </li>
+              <li class="list-visit__item">
+                <input class="list-visit__input" type="checkbox" id="mountain" name="mountain" checked>
+                <label class="list-visit__subtitle" for="mountain">Гора-Колокол</label>
+              </li>
+              <li class="list-visit__item">
+                <input class="list-visit__input" type="checkbox" id="park" name="park" checked>
+                <label class="list-visit__subtitle" for="">Слайд-парк</label>
+              </li>
+              <li class="list-visit__item">
+                <input class="list-visit__input" type="checkbox" id="rocks" name="rocks">
+                <label class="list-visit__subtitle" for="rocks">Красные скалы</label>
+              </li>
+            </ul>
+          </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Опишите свои эмоции:</legend>
+          <div class="form__description descrition">
+            <textarea class="descrition__input" name="descrition" id="descrition" placeholder="Опишите подробно все свои восторги"></textarea>
+            <label class="descrition__subtitle" for="description"></label>
+          </div>
+        </fieldset>
+        <button class="button" type="submit">Отправить отзыв</button>
+      </form>
+      <div class="modal-fail visually-hidden">
+        <h2 class="modal-fail__title">Что-то пошло не так!</h2>
+        <p class="modal-fail__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="button button--fail" type="button">Ок</button>
+      </div>
+      <div class="modal-succes visually-hidden">
+        <h2 class="modal-succes__title">Ваш отзыв отправлен!</h2>
+        <p class="modal-succes__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам, в ближайшее время мы опубликуем его на сайте.</p>
+        <button class="button button--succes" type="button">Закрыть окно</button>
+      </div>
   </main>
 
 <footer class="page-footer">
