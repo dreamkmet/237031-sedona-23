@@ -7,7 +7,7 @@
   <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <img src="img/logotypes/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
@@ -19,60 +19,60 @@
       <div class="container">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Фото и видео</a>
+            <a class="site-list__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="blank.html">Html academy</a>
+            <a class="site-list__link" href="blank.html">Html academy</a>
           </li>
         </ul>
       </div>
     </nav>
     </header>
 
-  <main class="page-gatalog">
+  <main class="page-catalog">
     <section class="page-catalog__intro">
       <h2 class="visually-hidden">Галерея городка Седона</h2>
       <img class="page-catalog__image" src="img/catalog-image.svg" width="229" height="39" alt="Sedona">
     </section>
 
-    <section class="page-catalog__gallery">
+    <section class="gallery">
       <div class="gallery__container">
         <h1 class="gallery__title">Фото и видео</h1>
         <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        <ul class="gallery__photo-list">
-          <li class="gallery__photo-item">
-            <img class="gallery__photo-image gallery__photo-image--first" src="img/gallery/image-vasts.jpg" widt="280" height="280" alt="Дорога в городок Седона">
-            <div class="gallery__photo-description">
+        <ul class="gallery__list">
+          <li class="gallery__item gallery-photo">
+            <img class="gallery-photo__image gallery-photo__image--first" src="img/gallery/image-vasts.jpg" width="280" height="280" alt="Дорога в городок Седона">
+            <div class="gallery-photo__description photo-description">
               <p class="photo-description__title">Народные просторы</p>
               <p class="photo-description__author">Автор фото: Борис</p>
               <p class="photo-description__likes">1350</p>
             </div>
           </li>
-          <li class="gallery__photo-item">
-            <img class="gallery__photo-image" src="img/gallery/image-vegetation.jpg" widt="280" height="280" alt="Фото кактуса">
-            <div class="gallery__photo-description">
+          <li class="gallery__item gallery-photo">
+            <img class="gallery-photo__image" src="img/gallery/image-vegetation.jpg" width="280" height="280" alt="Фото кактуса">
+            <div class="gallery-photo__description photo-description">
               <p class="photo-description__title">Местная растительность</p>
               <p class="photo-description__author">Автор фото: Сергей</p>
               <p class="photo-description__likes">143</p>
             </div>
           </li>
-          <li class="gallery__photo-item">
-            <img class="gallery__photo-image" src="img/gallery/image-road.jpg" widt="280" height="280" alt="Фото леса">
-            <div class="gallery__photo-description">
+          <li class="gallery__item gallery-photo">
+            <img class="gallery-photo__image" src="img/gallery/image-road.jpg" width="280" height="280" alt="Фото леса">
+            <div class="gallery-photo__description photo-description">
               <p class="photo-description__title">Дорога на север</p>
               <p class="photo-description__author">Автор фото: Петр</p>
               <p class="photo-description__likes">96</p>
             </div>
           </li>
-          <li class="gallery__photo-item">
-            <img class="gallery__photo-image" src="" widt="" height="" alt="">
-            <div class="gallery__photo-description">
+          <li class="gallery__item gallery-photo">
+            <img class="gallery-photo__image" src="img/gallery/image-bridge.jpg" width="280" height="280" alt="Фото Моста дьявола">
+            <div class="gallery-photo__description photo-description">
               <p class="photo-description__title">Мост дьявола</p>
               <p class="photo-description__author">Автор фото: Антон</p>
               <p class="photo-description__likes">254</p>
@@ -81,7 +81,7 @@
         </ul>
       </div>
     </section>
-    <section class="page-catalog__video">
+    <section class="video">
       <div class="video__container">
         <h2 class="video__title">Все еще сомневаетесь?</h2>
         <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
@@ -116,32 +116,27 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__container">
-      <div class="page-footer__hashtag">
-        <a class="page-footer__hashtag__link" href="#">#visitsedona</a>
-      </div>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">
-              <img src="img/social/twitter.svg" width="46" height="48" alt="Мы в Twitter"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
-              <img src="img/social/facebook.svg" width="46" height="48" alt="Мы в Facebook"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
-              <img src="img/social/youtube.svg" width="46" height="48" alt="Мы в Youtube"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/copyright.svg" width="27" height="34" alt="Логотип htmlacademy"></a>
-      </div>
-      </div>
+    <a class="page-footer__link" href="#">#visitsedona</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--twitter" href="#">
+          <img src="img/social/twitter.svg" width="46" height="48" alt="Мы в Twitter"></a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--facebook" href="#">
+          <img src="img/social/facebook.svg" width="46" height="48" alt="Мы в Facebook"></a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--youtube" href="#">
+          <img src="img/social/youtube.svg" width="46" height="48" alt="Мы в Youtube"></a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="img/copyright.svg" width="27" height="34" alt="Логотип htmlacademy">
+      </a>
+    </div>
   </footer>
 </body>
 
